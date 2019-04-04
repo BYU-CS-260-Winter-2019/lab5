@@ -30,6 +30,22 @@ For this query, we add `populate('user')` to have Mongo fill in the user
 information for each photo. This way we can use `photo.user.name` to get the
 name of the person who took the photo.
 
+## Vuex
+
+In `Vuex`, we need to add a new method to get all the photos from the back end:
+
+```
+async getAllPhotos(context) {
+      try {
+        let response = await axios.get("/api/photos/all");
+        context.commit('setPhotos', response.data);
+        return "";
+      } catch (error) {
+        return "";
+      }
+    },
+```
+
 ## Image Gallery
 
 We need to make some small changes to the Image Gallery to allow it to display
