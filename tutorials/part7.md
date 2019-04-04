@@ -330,12 +330,17 @@ header in `src/views/MyPage.vue`:
 ```
 <template>
 <div>
-  <div v-if="user" class="header">
-    <div>
-      <h2>{{user.name}}</h2>
-    </div>
-    <div class="button">
-      <p><button @click=" logout" class="pure-button pure-button-primary">Logout</button></p>
+  <div v-if="user">
+    <div class="header">
+      <div>
+        <h1>{{user.name}}</h1>
+      </div>
+      <div>
+        <p>
+          <a @click="toggleUpload"><i class="far fa-image"></i></a>
+          <a href="#" @click="logout"><i class="fas fa-sign-out-alt"></i></a>
+        </p>
+      </div>
     </div>
     <uploader :show="show" @escape="escape" @uploadFinished="uploadFinished" />
   </div>
@@ -346,6 +351,7 @@ header in `src/views/MyPage.vue`:
   </div>
 </div>
 </template>
+
 
 ```
 
