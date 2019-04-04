@@ -133,6 +133,13 @@ module.exports = {
 }
 ```
 
+The last step for the back end is to import the photos module in `server.js`:
+
+```
+const photos = require("./photos.js");
+app.use("/api/photos", photos.routes);
+```
+
 # VueX
 
 Now that have an API for uploading and getting photos, we need to add state,
