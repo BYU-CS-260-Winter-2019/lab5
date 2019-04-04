@@ -97,4 +97,4 @@ second.
 
 ![populated user record](/screenshots/populated.png)
 
-Go to [Part 9](/screenshots/part9.md).
+Go to [Part 9](/tutorials/part9.md).

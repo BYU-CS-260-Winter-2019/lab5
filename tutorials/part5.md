@@ -221,4 +221,4 @@ You should now be able to register a user.
 
 ![mypage](/screenshots/mypage1.png)
 
-Go to [Part 6](/screenshots/part6.md).
+Go to [Part 6](/tutorials/part6.md).

@@ -284,4 +284,4 @@ const users = require("./users.js");
 app.use("/api/users", users.routes);
 ```
 
-Go to [Part 5](/screenshots/part5.md).
+Go to [Part 5](/tutorials/part5.md).

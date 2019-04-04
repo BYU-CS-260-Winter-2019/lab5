@@ -55,4 +55,4 @@ This lets the webpack development server that is started by `npm run serve` prox
 Note we are using a different port this time. This will ensure it does not
 conflict with your previous projects.
 
-Go to [Part 4](/screenshots/part4.md).
+Go to [Part 4](/tutorials/part4.md).

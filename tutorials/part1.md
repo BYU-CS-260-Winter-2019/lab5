@@ -25,4 +25,4 @@ select features** and see the instructions there for configuring the project man
 
 This creates a Vue CLI setup with Vue Router, Vuex, webpack, and linting.
 
-Go to [Part 2](/screenshots/part2.md).
+Go to [Part 2](/tutorials/part2.md).

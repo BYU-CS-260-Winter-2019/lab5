@@ -138,6 +138,8 @@ this with `control-c`.
 
 ## Setup your public files
 
+NEEDS UPDATING
+
 Now copy your public files to `/var/www`. For example:
 
 ```

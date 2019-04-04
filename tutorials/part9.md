@@ -19,4 +19,4 @@ with the photo on it. The requirements for this part are:
 - The server should have a new REST API for fetching a single photo. This API
   should use Mongoose to get the photo from the database.
 
-  Go to [Part 10](/screenshots/part10.md).
+  Go to [Part 10](/tutorials/part10.md).

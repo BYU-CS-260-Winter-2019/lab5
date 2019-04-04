@@ -631,4 +631,4 @@ Users that are logged in can now upload and see their own photos.
 
 ![uploaded photos](/screenshots/mypage4.png)
 
-Go to [Part 8](/screenshots/part8.md).
+Go to [Part 8](/tutorials/part8.md).

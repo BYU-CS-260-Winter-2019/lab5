@@ -211,4 +211,4 @@ You should see the menu for this site:
 
 ![menu](/screenshots/menu.png)
 
-Go to [Part 3](/screenshots/part3.md).
+Go to [Part 3](/tutorials/part3.md).

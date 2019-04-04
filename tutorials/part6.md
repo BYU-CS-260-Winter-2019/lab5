@@ -251,4 +251,4 @@ in even if you refresh the page.
 
 ![my page](/screenshots/mypage3.png)
 
-Go to [Part 7](/screenshots/part7.md).
+Go to [Part 7](/tutorials/part7.md).
