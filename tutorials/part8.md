@@ -35,7 +35,7 @@ name of the person who took the photo.
 In `Vuex`, we need to add a new method to get all the photos from the back end:
 
 ```
-async getAllPhotos(context) {
+    async getAllPhotos(context) {
       try {
         let response = await axios.get("/api/photos/all");
         context.commit('setPhotos', response.data);
