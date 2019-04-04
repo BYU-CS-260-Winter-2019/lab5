@@ -30,7 +30,7 @@ mongoose.connect('mongodb://localhost:27017/photobomb', {
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
-app.listen(3000, () => console.log('Server listening on port 3001!'));
+app.listen(3001, () => console.log('Server listening on port 3001!'));
 ```
 
 This sets up Express, the body parser middleware, and Mongo. See previous
