@@ -328,18 +328,24 @@ We need to use this component on the `MyPage` view. Start by modifying the
 header in `src/views/MyPage.vue`:
 
 ```
-<div class="header">
-  <div>
-    <h1>{{user.name}}</h1>
+<template>
+<div>
+  <div v-if="user" class="header">
+    <div>
+      <h2>{{user.name}}</h2>
+    </div>
+    <div class="button">
+      <p><button @click=" logout" class="pure-button pure-button-primary">Logout</button></p>
+    </div>
+    <uploader :show="show" @escape="escape" @uploadFinished="uploadFinished" />
   </div>
-  <div>
-    <p>
-      <a @click="toggleUpload"><i class="far fa-image"></i></a>
-      <a href="#" @click="logout"><i class="fas fa-sign-out-alt"></i></a>
-    </p>
+  <div v-else>
+    <p>If you would like to upload photos, please register for an account or login.</p>
+    <router-link to="/register" class="pure-button">Register</router-link> or
+    <router-link to="/login" class="pure-button">Login</router-link>
   </div>
 </div>
-<uploader :show="show" @escape="escape" @upload-finished="uploadFinished" />
+</template>
 
 ```
 
