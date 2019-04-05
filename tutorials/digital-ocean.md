@@ -138,14 +138,19 @@ this with `control-c`.
 
 ## Setup your public files
 
-NEEDS UPDATING
+In your project directory, run:
 
-Now copy your public files to `/var/www`. For example:
+```
+npm run build
+```
+
+This will build the front end for your project and put it into the `dist` folder.
+Now copy everything in the `dist` folder to `/var/www`. For example:
 
 ```
 sudo mkdir /var/www/lab5.mydomain.com
 sudo chown zappala /var/www/lab5.mydomain.com
-cp -rp public/* /var/www/lab5.mydomain.com/
+cp -rp dist/* /var/www/lab5.mydomain.com/
 ```
 
 Be sure to use your username instead of `zappala`.
