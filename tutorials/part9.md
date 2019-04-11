@@ -18,5 +18,25 @@ with the photo on it. The requirements for this part are:
 
 - The server should have a new REST API for fetching a single photo. This API
   should use Mongoose to get the photo from the database.
+  
+  ## Hints
+  
+  To setup a route for an individual photo, you can use a configuration like this:
+  
+  ```
+  {
+      path: '/photo/:id',
+      name: 'photo',
+      component: Photo
+    }
+  ```
+  
+  Then inside the component, you can use `this.$route.params.id` to get the id that is passed in from the `:id` in the route.
+  
+  If you want to link to this component, use:
+  
+  ```
+  <router-link :to="{ name: 'photo', params: { id: photo._id }}"><img :src="photo.path" /></router-link>
+  ```
 
   Go to [Part 10](/tutorials/part10.md).
