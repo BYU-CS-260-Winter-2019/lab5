@@ -30,3 +30,41 @@ photo on its photo page. The requirements for this part are:
   photo. This API should use Mongoose to interact with the database. You will
   need to populate the database query for comments to fill in the user, like we
   did for photos.
+
+## Hints
+
+Recall that we setup a photo schema:
+
+```
+const photoSchema = new mongoose.Schema({
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'User'
+  },
+  path: String,
+  title: String,
+  description: String,
+  created: {
+    type: Date,
+    default: Date.now
+  },
+});
+```
+
+This references the `User` model. The comments schema should reference both a user and a photo.
+
+When we retrieved a list of photos from Mongo, we used this:
+
+```
+let photos = await Photo.find().sort({
+      created: -1
+    }).populate('user');
+```
+
+This gets a list of all the photos in the database, sorts them, and then populates them with user records. This means that
+the database finds the user id that is listed in the photo document, looks up the user document for that user in the database,
+and then inserts it with the photo results. This way, if you have a photo `p1`, you can call `p1.user.name` and get the details
+of that user.
+
+Likewise, when you retrieve a set of comments, you can populate the results with the users, so that you can know which user
+made which comment.
