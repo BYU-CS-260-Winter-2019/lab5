@@ -1,4 +1,4 @@
-Part 10: Comments
+# Part 10: Comments
 
 Modify the application so that users, if they are logged in, can comment on a
 photo on its photo page. The requirements for this part are:
