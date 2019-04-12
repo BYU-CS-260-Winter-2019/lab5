@@ -101,7 +101,7 @@ cd lab5
 ## Fix your node configuration
 
 We setup node for your local machine. There is one thing we need to change in
-`server.js`. Make sure you configure multer so that it stores files in your
+`photo.js`. Make sure you configure multer so that it stores files in your
 public web server directory. For example:
 
 ```
